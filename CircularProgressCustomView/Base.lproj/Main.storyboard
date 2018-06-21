@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hWG-zN-xCn"/>
+                        <viewControllerLayoutGuide type="bottom" id="H9I-K6-Q17"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLG-dC-XgU">
+                                <rect key="frame" x="77" y="303" width="220" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lc-J9-ajy" customClass="CircularProgressCustomView">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8Nn-a8-lP5"/>
+                                            <constraint firstAttribute="width" constant="60" id="Z9x-Mn-IC0"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="so7-iz-N0k" customClass="CircularProgressCustomView">
+                                        <rect key="frame" x="80" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-Kc-luE" customClass="CircularProgressCustomView">
+                                        <rect key="frame" x="160" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8e1-Kc-luE" secondAttribute="bottom" id="4GU-Ys-2no"/>
+                                    <constraint firstItem="8lc-J9-ajy" firstAttribute="top" secondItem="GLG-dC-XgU" secondAttribute="top" id="6EJ-bX-g6L"/>
+                                    <constraint firstItem="so7-iz-N0k" firstAttribute="width" secondItem="8lc-J9-ajy" secondAttribute="width" id="6gV-dR-uXk"/>
+                                    <constraint firstAttribute="bottom" secondItem="8lc-J9-ajy" secondAttribute="bottom" id="DTU-z2-T7Q"/>
+                                    <constraint firstItem="8lc-J9-ajy" firstAttribute="leading" secondItem="GLG-dC-XgU" secondAttribute="leading" id="FMT-Wy-UZj"/>
+                                    <constraint firstItem="8e1-Kc-luE" firstAttribute="width" secondItem="8lc-J9-ajy" secondAttribute="width" id="H3a-3O-G22"/>
+                                    <constraint firstItem="so7-iz-N0k" firstAttribute="leading" secondItem="8lc-J9-ajy" secondAttribute="trailing" constant="20" id="JLK-WH-X8B"/>
+                                    <constraint firstItem="8e1-Kc-luE" firstAttribute="top" secondItem="GLG-dC-XgU" secondAttribute="top" id="OyL-0M-3Sv"/>
+                                    <constraint firstItem="8e1-Kc-luE" firstAttribute="leading" secondItem="so7-iz-N0k" secondAttribute="trailing" constant="20" id="Qj8-0O-t8A"/>
+                                    <constraint firstAttribute="bottom" secondItem="so7-iz-N0k" secondAttribute="bottom" id="TdY-3A-A7b"/>
+                                    <constraint firstItem="so7-iz-N0k" firstAttribute="top" secondItem="GLG-dC-XgU" secondAttribute="top" id="Th8-Gr-Tlj"/>
+                                    <constraint firstItem="so7-iz-N0k" firstAttribute="height" secondItem="8lc-J9-ajy" secondAttribute="height" id="W7A-bo-5c1"/>
+                                    <constraint firstAttribute="trailing" secondItem="8e1-Kc-luE" secondAttribute="trailing" id="oeh-8X-YXG"/>
+                                    <constraint firstItem="8e1-Kc-luE" firstAttribute="height" secondItem="8lc-J9-ajy" secondAttribute="height" id="uNy-N2-zDT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GLG-dC-XgU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SIJ-BH-3H1"/>
+                            <constraint firstItem="GLG-dC-XgU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ihg-ji-1Z3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CircularProgressCustomView1" destination="8lc-J9-ajy" id="h1V-az-OqB"/>
+                        <outlet property="CircularProgressCustomView2" destination="so7-iz-N0k" id="4qK-2t-vD2"/>
+                        <outlet property="CircularProgressCustomView3" destination="8e1-Kc-luE" id="o4X-2E-axH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
